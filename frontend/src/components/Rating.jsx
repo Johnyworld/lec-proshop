@@ -5,7 +5,7 @@ const Rating = ({ value, text, color }) => {
     <div className='rating'>
       
       {[...Array(5)].map((_, i) => (
-        <span>
+        <span key={i}>
           <i style={{ color }} className={
             value >= i+1
               ? 'fas fa-star'
